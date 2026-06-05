@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="./assets/img/velocityx-logo.svg">
+<title>Trompo Kids Game – Spinning Top Tournaments, Events & Visits</title>
+
+<meta name="description" content="Trompo Kids Game: spinning top tournament calendar, ticket buying, and family experiences at our historic venue in Santiago.">
+<meta property="og:title" content="Trompo Kids Game — Spinning Top Tournaments & Tradition">
+<meta property="og:description" content="Check tournament schedules, results, and family activities at Trompo Kids Game.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="./assets/img/velocityx-logo.svg">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Trompo Kids Game — Spinning Top Heritage & Events">
+<meta name="twitter:description" content="Discover events, programs, and family activities at Trompo Kids Game, honoring spinning top tradition.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css" />
+
+<!-- ================= MOBILE NAV CSS ================= -->
+<style>
+.nav-toggle{
+  display:none;
+  background:none;
+  border:none;
+  font-size:26px;
+  cursor:pointer;
+}
+
+/* Desktop */
+.menu{
+  display:flex;
+  gap:18px;
+}
+
+/* Mobile */
+@media (max-width: 900px){
+
+  .nav-toggle{
+    display:block;
+    color:#fff;
+  }
+
+  .right{
+    display:none;
+  }
+
+  .menu{
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: #0d1b2a;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px;
+    display: none;
+    z-index: 9999;
+  }
+
+  .menu a{
+    color:#fff;
+    font-size:16px;
+  }
+
+  /* ACTIVE STATE */
+  .menu.show{
+    display:flex;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+
+    <a class="logo" href="index.html">
+      <span>Trompo Kids Game</span>
+    </a>
+
+    <!-- Toggle Button -->
+    <button class="nav-toggle" id="navToggle">☰</button>
+
+    <!-- Menu -->
+    <div class="menu" id="navMenu">
+      <a href="index.html" style="opacity:1;font-weight:800">Home</a>
+      <a href="game.html">Spinning Top Tournaments</a>
+      <a href="leaderboard.html">Calendar</a>
+      <a href="about.html">The Club</a>
+      <a href="blog.html">News</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+
+    <div class="right">
+      <a class="btn" href="game.html">See Upcoming Spinning Top Tournaments</a>
+    </div>
+
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container grid">
+    <div>
+      <div class="badge">Spinning Top Tournaments • Tradition • Family</div>
+      <h1>Trompo Kids Game — Tradition and Equestrian Passion</h1>
+      <p>
+        Trompo Kids Game hosts spinning top tournaments, family events, and equestrian activities at a historic venue. Check results, buy tickets, and enjoy the equestrian experience with your family.
+      </p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn" href="game.html">Spinning Top Tournament Calendar</a>
+        <a class="btn ghost" href="blog.html" style="color: #000;">Read News</a>
+      </div>
+      <div class="kudos">
+        <span class="pill">🐎 Spinning Top</span>
+        <span class="pill">🏇 Spinning Top Tournaments</span>
+        <span class="pill">🎟️ Events</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="grid-2">
+        <div class="card">
+          <div class="stat">
+            <div class="n" >History</div>
+            <div class="t" style="color: #fff;">Venue</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="stat">
+            <div class="n">Elite</div>
+            <div class="t" style="color: #fff;">Competitive Skill</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section container">
+  <h2>Why Trompo Kids Game Stands Out</h2>
+  <p style="max-width:720px;margin:0 auto 32px;opacity:0.8">
+    Trompo Kids Game blends community, sport, and heritage, celebrating spinning top traditions,
+    build confidence, and learn practical skills through hands-on activities.
+  </p>
+
+  <div class="grid-2" style="margin-bottom:48px">
+    <div class="card" style="color: #fff;">
+      <h3>🏇 Spinning Top Tournament Days</h3>
+      <p>Weekly spinning top tournaments with multiple categories.</p>
+    </div>
+
+    <div class="card" style="color: #fff;">
+      <h3>🎪 Family Events</h3>
+      <p>Activities for the whole family.</p>
+    </div>
+
+    <div class="card" style="color: #fff;">
+      <h3>🧑‍✈️ Equestrian Tours</h3>
+      <p>Guided tours and talks.</p>
+    </div>
+
+    <div class="card" style="color: #fff;">
+      <h3>🎟️ VIP Experiences</h3>
+      <p>Premium packages.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section container">
+  <div class="card">
+    <h2 style="color: #fff; text-align: center;">Plan Your Visit</h2>
+
+    <form id="contact-form" style="max-width:720px;margin:24px auto 0;text-align:left">
+      <div class="form-row">
+        <div>
+          <label style="color: #fff;">Name</label>
+          <input name="name" required placeholder="Your Name">
+        </div>
+        <div>
+          <label style="color: #fff;">Email</label>
+          <input name="email" required type="email" placeholder="your.email@example.com">
+        </div>
+      </div>
+
+      <div style="height:12px"></div>
+
+      <div>
+        <label style="color: #fff;">Message</label>
+        <textarea name="message" rows="4"></textarea>
+      </div>
+
+      <div style="height:18px"></div>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <div>© 2026 Trompo Kids Game. All rights reserved.</div>
+    <div>
+      <span class="badge">Playful Learning • Safe • Family-Friendly</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+<!-- ============ MOBILE NAV SCRIPT ============ -->
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+  const mobileToggleBtn = document.getElementById("navToggle");
+  const mobileMenuBox  = document.getElementById("navMenu");
+
+  if(!mobileToggleBtn || !mobileMenuBox) return;
+
+  mobileToggleBtn.addEventListener("click", function(){
+    mobileMenuBox.classList.toggle("show");
+  });
+
+  // auto-close after click
+  mobileMenuBox.querySelectorAll("a").forEach(link=>{
+    link.addEventListener("click", ()=>{
+      mobileMenuBox.classList.remove("show");
+    });
+  });
+
+});
+</script>
+
+</body>
+</html>
