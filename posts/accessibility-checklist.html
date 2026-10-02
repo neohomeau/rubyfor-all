@@ -3,69 +3,62 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="icon" href="favicon.svg">
-<title>GameForge+ — Playful Web Studio</title>
-<meta name="description" content="GameForge+ is a modern, responsive game website with an engaging canvas game.">
+<link rel="icon" href="../favicon.svg">
+<title>GameForge+ — Blog</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
 <nav class="nav">
   <div class="container nav-inner">
-    <a class="logo" href="index.html" aria-label="Home">
-      <img src="assets/img/logo.svg" alt="GameForge+ icon"><span>GameForge+</span>
-    </a>
+    <a class="logo" href="../index.html"><img src="../assets/img/logo.svg" alt="GameForge+ icon"><span>GameForge+</span></a>
     <div class="menu" data-nav-menu>
-      <a href="index.html" >Home</a>
-      <a href="game.html" >Play Game</a>
-      <a href="leaderboard.html" style='opacity:1;font-weight:800'>Leaderboard</a>
-      <a href="about.html" >About</a>
-      <a href="blog.html" >Blog</a>
-      <a href="faq.html" >FAQ</a>
-      <a href="privacy.html" >Privacy</a>
-      <a href="terms.html" >Terms</a>
-      <a href="#contact">Contact</a>
+      <a href="../index.html">Home</a>
+      <a href="../game.html">Play Game</a>
+      <a href="../leaderboard.html">Leaderboard</a>
+      <a href="../about.html">About</a>
+      <a href="../blog.html" style="opacity:1;font-weight:800">Blog</a>
+      <a href="../faq.html">FAQ</a>
+      <a href="../privacy.html">Privacy</a>
+      <a href="../terms.html">Terms</a>
+      <a href="../index.html#contact">Contact</a>
     </div>
     <div class="right">
       <a class="btn ghost" data-nav-toggle>Menu</a>
-      <a class="btn" href="game.html">Play</a>
+      <a class="btn" href="../game.html">Play</a>
     </div>
   </div>
 </nav>
 
 <header class="hero"><div class="container">
-  <h1>Leaderboard</h1>
-  <p>Top scores saved in your browser.</p>
+  <h1>A Quick Accessibility Checklist for Games</h1>
+  <p>Small changes that make a big difference.</p>
 </div></header>
 <section class="section container">
-  <div class="card">
-    <div id="lb-list">Loading…</div>
-  </div>
+  <article class="card">
+    <div class="meta">Published 2025-08-22</div>
+    <div>Contrast, readable size, and keyboard support help everyone:
+<ul>
+<li>Body text ≥ 16px; UI labels ≥ 14px.</li>
+<li>Don’t rely on color alone—add icons or text.</li>
+<li>Ensure focus outlines are visible for interactive elements.</li>
+<li>Pause animations when the tab is hidden.</li>
+</ul>
+Accessibility isn’t a tax—it’s free polish.</div>
+    <div style="height:12px"></div>
+    <a class="btn ghost" href="../blog.html">← Back to Blog</a>
+  </article>
 </section>
-<script>
-(function(){
-  function render(){
-    const el = document.getElementById('lb-list');
-    const lb = JSON.parse(localStorage.getItem('gf_leaderboard')||'[]');
-    if(!lb.length){ el.textContent = 'No scores yet. Play the game!'; return; }
-    const rows = lb.slice(0,50).map((r,i)=>`<tr><td>#${i+1}</td><td>${r.score}</td><td>${new Date(r.at).toLocaleString()}</td></tr>`).join('');
-    el.innerHTML = `<table style="width:100%"><thead><tr><th>Rank</th><th>Score</th><th>When</th></tr></thead><tbody>${rows}</tbody></table>`;
-  }
-  render();
-})();
-</script>
 
 <footer class="footer">
   <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
     <div>© 2025 GameForge+. All rights reserved.</div>
-    <div style="display:flex;gap:12px;align-items:center">
-      <span class="badge">Responsive • Age-gate</span>
-    </div>
+    <div style="display:flex;gap:12px;align-items:center"><span class="badge">Responsive • Age-gate</span></div>
   </div>
 </footer>
-<script src="assets/js/main.js"></script>
+<script src="../assets/js/main.js"></script>
 </body>
 </html>\n<footer style="background:#0b1220;color:#e5e7eb;border-top:1px solid #1f2937">
   <div style="max-width:960px;margin:0 auto;padding:18px 24px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between">

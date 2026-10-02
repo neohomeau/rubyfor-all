@@ -20,7 +20,7 @@
     <div class="menu" data-nav-menu>
       <a href="index.html" >Home</a>
       <a href="game.html" >Play Game</a>
-      <a href="leaderboard.html" style='opacity:1;font-weight:800'>Leaderboard</a>
+      <a href="leaderboard.html" >Leaderboard</a>
       <a href="about.html" >About</a>
       <a href="blog.html" >Blog</a>
       <a href="faq.html" >FAQ</a>
@@ -36,26 +36,10 @@
 </nav>
 
 <header class="hero"><div class="container">
-  <h1>Leaderboard</h1>
-  <p>Top scores saved in your browser.</p>
+  <h1>Alternate route (Under 18)</h1>
+  <p>Placeholder page. Configure your preferred destination here.</p>
+  <a class="btn" href="index.html">Back to site</a>
 </div></header>
-<section class="section container">
-  <div class="card">
-    <div id="lb-list">Loading…</div>
-  </div>
-</section>
-<script>
-(function(){
-  function render(){
-    const el = document.getElementById('lb-list');
-    const lb = JSON.parse(localStorage.getItem('gf_leaderboard')||'[]');
-    if(!lb.length){ el.textContent = 'No scores yet. Play the game!'; return; }
-    const rows = lb.slice(0,50).map((r,i)=>`<tr><td>#${i+1}</td><td>${r.score}</td><td>${new Date(r.at).toLocaleString()}</td></tr>`).join('');
-    el.innerHTML = `<table style="width:100%"><thead><tr><th>Rank</th><th>Score</th><th>When</th></tr></thead><tbody>${rows}</tbody></table>`;
-  }
-  render();
-})();
-</script>
 
 <footer class="footer">
   <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
